@@ -10,7 +10,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-import org.apache.commons.lang.StringUtils;
+//import org.apache.commons.lang.StringUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Sound;
@@ -952,5 +952,10 @@ public class Format {
 	
 	public static String stripColor(String message) {
 		return message.replaceAll("(\u00A7([a-z0-9]))", "");
+	}
+
+	private static class StringUtils {
+
+		public static final String EMPTY = "";
 	}
 }
